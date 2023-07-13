@@ -1,0 +1,77 @@
+.first{
+    height: 100vh;
+}
+
+
+.footer{
+    align-items: center; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.footerLeft{
+    display: flex;
+    padding-left: 1rem;
+}
+
+
+
+.footerRight{
+    display: flex;
+    padding-right: 1rem;
+}
+
+h3{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    color: #084B72;
+}
+
+.footerLeft h3{
+    color: #084B72;
+    position: relative;
+    
+}
+
+.envolope{
+    top: 2px;
+}
+
+.linkedin{
+    top: 0.1px;
+}
+
+/*Banner*/
+
+.banner{
+  top: 5rem;
+  margin-top: 19rem;
+  margin-left: 8rem;
+  width: 80vw;
+  height: 70vh;
+}
+
+h1{
+    color: #084B72;
+    font-size: 5rem;
+    margin: auto;
+}
+
+.subtitulo {
+    color: #47A7EB;
+    font-weight: bold;
+    font-size: 1.8rem;
+    position: relative;
+    left: 4.5px;
+    bottom: 1rem;
+    margin: auto
+    
+}

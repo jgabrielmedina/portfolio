@@ -1,0 +1,20 @@
+.cajaAbout{
+    width: 80vw;
+    margin: auto;
+    height: 90vh;
+}
+
+ .aboutme{
+    color: #47A7EB;
+    font-size: 1.5rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.cajaAbout p {
+    color: #084B72;
+}
+
+.footerRight a{
+    text-decoration: none;
+}
