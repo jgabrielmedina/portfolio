@@ -20,6 +20,7 @@
 .footerLeft{
     display: flex;
     padding-left: 1rem;
+    align-items: center;
 }
 
 
@@ -44,7 +45,15 @@ h3{
 .envolope{
     top: 2px;
 }
-
+.aBanner{
+    text-decoration: none;
+}
+.logo{
+    font-size: 2rem;
+    margin: auto;
+    color: #D10000!important;
+    text-decoration: none;
+}
 .linkedin{
     top: 0.1px;
 }
@@ -53,8 +62,8 @@ h3{
 
 .banner{
   top: 5rem;
-  margin-top: 19rem;
-  margin-left: 8rem;
+  padding-top: 19rem;
+  margin: auto;
   width: 80vw;
   height: 70vh;
 }

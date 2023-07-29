@@ -15,15 +15,15 @@ function App() {
       <div className='first'>
       <div className='footer'>
         <Footer />
+        
       </div>
 
       <Banner />
      
       <AboutMe/>
-  
+      
       <ListProyect/>
      
-
       </div>
 
     </React.Fragment>

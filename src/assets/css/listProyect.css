@@ -12,11 +12,10 @@
     padding: 0rem;
     border-radius: 3rem;
     padding: 2rem;
-    height: 60vh;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0,0,0,.09);
-
+    box-shadow: 0 0 10px rgba(0,0,0,.29);
+    margin: 30px;
 }
 
 .imagenProyecto{
@@ -41,7 +40,6 @@
 
 .pDescription{
     font-size: 22px;
-    /* position: relative; */
     left: 4.5px;
     bottom: 1rem;
     margin: auto;
@@ -50,4 +48,32 @@
 .techStack .icono{
 font-size: 4rem;
 padding-right: 10px;
+
 }
+
+.techStack{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.aButton{
+    width: 70%;
+}
+
+.buttonProyect{
+    border: 1px solid #47A7EB;
+    color: #47A7EB;
+    background-color: white;
+    padding: 10px;
+    margin-left: 1rem;
+    width: 38%;
+    transition: 100ms;
+}
+.buttonProyect:hover{
+
+    color: white;
+    background-color: #47A7EB;
+ 
+}
+

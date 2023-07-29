@@ -18,8 +18,9 @@ function AboutMe() {
                 <br />
                 <br />
                  Actualmente me encuentro profundizando mis conocimientos en React, estoy emocionado por seguir creciendo como Front-end developer y expectante por explorar nuevas oportunidades en el mundo del desarrollo web.  </p>
-                        
+                
             </div>
+            
         </React.Fragment>
         
     )
