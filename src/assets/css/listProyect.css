@@ -7,32 +7,25 @@
 
 
 .proyect{
-    display: flex;
-    flex-wrap: wrap;
     padding: 0rem;
     border-radius: 3rem;
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
+    padding: 1.5rem;
     box-shadow: 0 0 10px rgba(0,0,0,.29);
-    margin: 30px;
+    margin-bottom: 1rem;
 }
 
-.imagenProyecto{
-    width: 45%;
-    padding: 1rem;
-   
-}
+
 
 .imagenProyecto img{
     width: 100%;
     border-radius: 1rem;
 }
 
+
 .descripcionProyecto{
-    width: 45%;
-    padding: 1rem;
-}
+    padding-top: 1rem
+    
+    }
 
 .descripcionProyecto p{
     width: 100%
@@ -51,29 +44,82 @@ padding-right: 10px;
 
 }
 
+
+
 .techStack{
     margin-top: 1rem;
-    display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 .aButton{
     width: 70%;
 }
 
+
+
 .buttonProyect{
     border: 1px solid #47A7EB;
-    color: #47A7EB;
-    background-color: white;
-    padding: 10px;
-    margin-left: 1rem;
-    width: 38%;
-    transition: 100ms;
-}
+        color: #47A7EB;
+        background-color: white;
+        padding: 10px;
+        margin-left: 16px;
+        width: 38%;
+        transition: 100ms;
+    }
+    
 .buttonProyect:hover{
 
     color: white;
     background-color: #47A7EB;
  
 }
+
+@media screen and (min-width: 768px) {
+
+
+    .proyect{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0rem;
+        border-radius: 3rem;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0,0,0,.29);
+        margin: 30px;
+    }
+
+    .imagenProyecto{
+        width: 45%;
+        padding: 1rem;
+       
+    }
+
+    .descripcionProyecto{
+        width: 45%;
+        padding: 1rem;
+    }
+
+    .techStack{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .buttonProyect{
+        border: 1px solid #47A7EB;
+        color: #47A7EB;
+        background-color: white;
+        padding: 10px;
+        margin-left: 1rem;
+        width: 38%;
+        transition: 100ms;
+    }
+    
+
+
+    
+  
+    }
 
