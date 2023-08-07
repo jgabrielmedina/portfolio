@@ -116,6 +116,22 @@ h1{
     
 }
 
+.linkCv{
+    margin-top: 1rem;
+}
+
+.linkCv a {
+    background-color: #47A7EB;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 47px;
+
+}
 
 
 
