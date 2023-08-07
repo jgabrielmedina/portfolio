@@ -13,7 +13,7 @@ function App() {
 
     <React.Fragment>
       <div className='first'>
-      <div className='footer'>
+      <div className='footer' id='footer'>
         <Footer />
         
       </div>

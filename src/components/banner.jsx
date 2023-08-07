@@ -9,6 +9,8 @@ function Banner() {
             <div className="bannerImg">
                     <img src="/photoCV.jpeg" alt="foto"/>
                 </div>
+                <br />
+                <br />
                 <div className="bannerName">
                 <h1>FRONT-END REACT DEVELOPER</h1>
                 <p className="subtitulo">Jose Gabriel Medina</p>
