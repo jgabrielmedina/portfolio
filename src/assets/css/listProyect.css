@@ -5,7 +5,6 @@
 }
 
 
-
 .proyect{
     padding: 0rem;
     border-radius: 3rem;
@@ -13,7 +12,6 @@
     box-shadow: 0 0 10px rgba(0,0,0,.29);
     margin-bottom: 1rem;
 }
-
 
 
 .imagenProyecto img{
@@ -25,11 +23,13 @@
 .descripcionProyecto{
     padding-top: 1rem
     
-    }
+}
+
 
 .descripcionProyecto p{
     width: 100%
 }
+
 
 .pDescription{
     font-size: 22px;
@@ -38,6 +38,7 @@
     margin: auto;
 }
 
+
 .techStack .icono{
 font-size: 4rem;
 padding-right: 10px;
@@ -45,11 +46,11 @@ padding-right: 10px;
 }
 
 
-
 .techStack{
     margin-top: 1rem;
     text-align: center;
 }
+
 
 .aButton{
     width: 70%;

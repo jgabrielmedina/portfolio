@@ -69,17 +69,39 @@ h3{
 /*Banner*/
 
 .banner{
-  top: 5rem;
-  padding-top: 19rem;
-  margin: auto;
-  width: 80vw;
-  height: 70vh;
-  text-align: center;
+    top: 5rem;
+    /* padding-top: 19rem; */
+    align-items: center;
+    margin: auto;
+    display: flex;
+    margin-top: 6rem;
+    width: 80vw;
+    height: 70vh;
+    text-align: center;
+    flex-direction: column;
 }
+
+.bannerImg{
+    width: 76%;
+    border-image: 38px;
+    height: 50%;
+}
+
+.bannerImg img{
+    /* width: 100%; */
+    border-radius: 50%;
+    height: 270px;
+    /* width: 175px; */
+    width: 100%;
+}
+
+
+
+
+
 
 h1{
     color: #084B72;
-    font-size: 5rem;
     margin: auto;
 }
 
@@ -87,7 +109,7 @@ h1{
     color: #47A7EB;
     font-weight: bold;
     font-size: 1.1rem;
-    position: relative;
+/*     position: relative; */
     left: 4.5px;
     bottom: 1rem;
     margin: auto

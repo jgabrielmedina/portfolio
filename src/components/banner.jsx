@@ -6,8 +6,13 @@ function Banner() {
     return (
         <React.Fragment>
             <div className="banner" id="banner">
-                <h1>MEDINA JOSE</h1>
-                <p className="subtitulo">Front-end Developer</p>
+            <div className="bannerImg">
+                    <img src="/photoCV.jpeg" alt="foto"/>
+                </div>
+                <div className="bannerName">
+                <h1>FRONT-END REACT DEVELOPER</h1>
+                <p className="subtitulo">Jose Gabriel Medina</p>
+                </div>
             </div>
         </React.Fragment>
 
