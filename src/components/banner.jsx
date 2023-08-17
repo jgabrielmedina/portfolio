@@ -14,7 +14,7 @@ function Banner() {
                 <div className="bannerName">
                 <h1>FRONT-END REACT DEVELOPER</h1>
                 <p className="subtitulo">Jose Gabriel Medina</p>
-                <p className="linkCv"><a href="https://drive.google.com/file/d/1DUmxraO1U46EfmAQlpelU-eLIsUELTFy/view?usp=drive_link"target="_blank"  rel="noreferrer" >Curriculum Vitae</a></p>
+                <p className="linkCv"><a href="https://drive.google.com/file/d/1rumu_C4QDaf4IS7ya3_me1g2bDU5NJ6O/view" target="_blank"  rel="noreferrer" >Curriculum Vitae</a></p>
                 </div>
           
 
