@@ -13,6 +13,14 @@ function ListProyect() {
 
              
                 <Proyect
+                    name= "Papa Noel App"
+                    description = "la aplicacion que Papa Noel va a usar estas Navidades."
+                    url = "https://github.com/jgabrielmedina/PapaNoel-App"
+                    img = "photoGift.png"
+                    tech = {<BiLogoReact></BiLogoReact>}
+                    demo = "https://papa-noel-app.vercel.app/"
+                />
+                <Proyect
                     name= "Weather App"
                     description = "Mediante el consumo de 3 diferentes APIs se realizo una app que te brinda el reporte del clima segun el pais y la ciudad seleccionada."
                     url = "https://github.com/jgabrielmedina/weatherApp"
