@@ -133,6 +133,49 @@ h1{
 
 }
 
+.html{
+    color: #FF5733;
+    padding-left: 1rem;
+}
+
+.css{
+    color: #264de4;
+}
+
+.js{
+    color: #F0DB4F;
+}
+
+.react{
+    color: #61DBFB;
+}
+
+.tailwindcss{
+    color: #29b9fc;
+}
+
+.tech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 20px;
+    margin-top: 2rem;
+   
+}
+
+.tech .textTech{
+    padding-right: 1rem;
+    border-right: 1px solid black ;
+}
+
+
+.tech .logoi{
+    font-size: 2.2rem;
+    padding-right: 1rem;
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -153,6 +196,7 @@ h1{
 
     .banner img{
         width: 53%;
+        max-width: 75%;
         height: 350px; 
     }
 
@@ -166,3 +210,9 @@ h1{
   
     }
     
+
+    @media screen and (min-width: 550px){
+        .bannerImg img{
+            max-width: 80%;
+        }
+    }

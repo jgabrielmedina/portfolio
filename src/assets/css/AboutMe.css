@@ -1,7 +1,9 @@
 .cajaAbout{
     width: 80vw;
     margin: auto;
-    height: 90vh;
+    height: 65vh;
+    margin-top: 11rem;
+    margin-bottom: 3rem;
 }
 
  .aboutme{
@@ -18,3 +20,35 @@
 .footerRight a{
     text-decoration: none;
 }
+
+@media screen and (min-width: 391px) {
+
+   .cajaAbout{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+   }
+   
+  
+    }
+@media screen and (min-width: 900px) {
+
+   .cajaAbout{
+    margin-top: 3rem;
+    margin-bottom: 18rem;
+   }
+   .conteinerButton{
+    text-align: left;
+
+   }
+  
+    }
+@media screen and (min-width: 1200px) {
+
+   .cajaAbout{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+   }
+
+   
+  
+    }

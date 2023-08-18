@@ -9,10 +9,11 @@ function Proyect(props) {
         <p className="subtitulo"> {props.name} </p>
         <p className="pDescription">{props.description}</p>
         <div className="techStack">
-            
-            <span className="icono">{props.tech}</span>
-            <a href={props.url} className="icono" target="_blank"><DiGithubBadge /></a>
+            <p className="iconoProyect"> <span>Tech:</span> {props.tech1}{props.tech2} </p>
+            <div className="conteinerButton">
             <a href={props.demo} target="_blank" className="aButton"><button className="buttonProyect">Ver demo</button></a>
+           <a href={props.url} className="git" target="_blank"><DiGithubBadge /></a>   
+        </div>
         </div>
     </div>
 </div>

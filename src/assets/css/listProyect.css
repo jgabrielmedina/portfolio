@@ -4,6 +4,15 @@
     height: 95vh;
 }
 
+.git{
+    font-size: 2rem;
+}
+
+.iconoProyect{
+    text-align: initial;
+    color: gray;
+    font-size: 20px;
+}
 
 .proyect{
     padding: 0rem;
@@ -54,16 +63,26 @@ padding-right: 10px;
 
 .aButton{
     width: 70%;
+
+}
+
+
+.git svg{
+    padding-top: 2px;
+    position: relative;
+    top: 8px;
+    left: 13px;
 }
 
 
 
 .buttonProyect{
-    border: 1px solid #47A7EB;
+        border: 1px solid #47A7EB;
         color: #47A7EB;
         background-color: white;
         padding: 10px;
         margin-left: 16px;
+        margin-top: 15px;
         width: 38%;
         transition: 100ms;
     }
@@ -75,7 +94,17 @@ padding-right: 10px;
  
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width:750px){
+    
+    .listProyect{
+        margin-top: 9rem;
+    }
+    .iconoProyect{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 821px) {
 
 
     .proyect{
@@ -103,7 +132,6 @@ padding-right: 10px;
 
     .techStack{
         margin-top: 1rem;
-        display: flex;
         align-items: center;
     }
 
@@ -118,9 +146,4 @@ padding-right: 10px;
         transition: 100ms;
     }
     
-
-
-    
-  
     }
-

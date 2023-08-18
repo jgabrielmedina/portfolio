@@ -2,6 +2,7 @@ import React from "react";
 import Proyect from "./Proyects";
 import { DiNodejs } from "react-icons/di";
 import { BiLogoReact } from "react-icons/bi";
+import { BiLogoTailwindCss } from "react-icons/bi";
 
 function ListProyect() {
 
@@ -17,7 +18,8 @@ function ListProyect() {
                     description = "la aplicacion que Papa Noel va a usar estas Navidades."
                     url = "https://github.com/jgabrielmedina/PapaNoel-App"
                     img = "photoGift.png"
-                    tech = {<BiLogoReact></BiLogoReact>}
+                    tech1 = {<BiLogoReact></BiLogoReact>}
+                    tech2 = {<BiLogoTailwindCss/>}
                     demo = "https://papa-noel-app.vercel.app/"
                 />
                 <Proyect
@@ -25,7 +27,7 @@ function ListProyect() {
                     description = "Mediante el consumo de 3 diferentes APIs se realizo una app que te brinda el reporte del clima segun el pais y la ciudad seleccionada."
                     url = "https://github.com/jgabrielmedina/weatherApp"
                     img = "weatherApp.png"
-                    tech = {<BiLogoReact></BiLogoReact>}
+                    tech1 = {<BiLogoReact></BiLogoReact>}
                     demo = "https://weather-app-self-omega.vercel.app/"
                 />
                 <Proyect
@@ -33,7 +35,7 @@ function ListProyect() {
                     description = "Lista de tareas creada con Redux Toolkit, me enfoque en el diseño limpio y minimalista, facil de usar, rapido e intuitivo."
                     url = "https://github.com/jgabrielmedina/ToDoList"
                     img = "toDoList.png"
-                    tech = {<BiLogoReact></BiLogoReact>}
+                    tech1 = {<BiLogoReact></BiLogoReact>}
                     demo = "https://to-do-list-drab-pi.vercel.app/"
                 />
                 <Proyect
@@ -41,7 +43,7 @@ function ListProyect() {
                     description = " E-commerce realizado en conjunto con un equipo durante la cursada de DigitalHouse"
                     url = "https://github.com/sabriw88/grupo_6_panaderiaHello"
                     img = "/PHOTO-2023-06-29-12-23-09.jpg"
-                    tech = {<DiNodejs></DiNodejs>}
+                    tech1 = "Node JS, Express"
                 />
               
 
