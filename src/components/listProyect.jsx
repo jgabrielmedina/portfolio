@@ -38,14 +38,14 @@ function ListProyect() {
                     tech1 = {<BiLogoReact></BiLogoReact>}
                     demo = "https://to-do-list-drab-pi.vercel.app/"
                 />
-                <Proyect
+           {/*      <Proyect
                     name= "Hello!"
                     description = " E-commerce realizado en conjunto con un equipo durante la cursada de DigitalHouse"
                     url = "https://github.com/sabriw88/grupo_6_panaderiaHello"
                     img = "/PHOTO-2023-06-29-12-23-09.jpg"
                     tech1 = "Node JS, Express"
                 />
-              
+               */}
 
                
             </div>
