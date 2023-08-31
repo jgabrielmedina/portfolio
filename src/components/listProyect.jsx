@@ -14,6 +14,16 @@ function ListProyect() {
 
              
                 <Proyect
+                    name= "App Digimon"
+                    description = "Mediante el consumo de la APIs de digimon, decidi volver a los origenes de la franquicia y crear un tamagotchi, podras criarlo desde un huevo, entranarlo y hacerlo crecer"
+                    url = "https://github.com/jgabrielmedina/Tamagotchi"
+                    img = "bgDigimon.png"
+                    tech1 = {<BiLogoReact></BiLogoReact>}
+                    tech2 = {<BiLogoTailwindCss/>}
+                    demo = "https://digimon-six.vercel.app/"
+                />
+                
+                <Proyect
                     name= "Papa Noel App"
                     description = "la aplicacion que Papa Noel va a usar estas Navidades."
                     url = "https://github.com/jgabrielmedina/PapaNoel-App"
