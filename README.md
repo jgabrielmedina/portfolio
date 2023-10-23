@@ -1,70 +1,289 @@
-# Getting Started with Create React App
+#Ej 1 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#a
+def contar_lineas (nombre_archivo : str) -> int:
+    archivo = open(nombre_archivo, 'r')
+    lineas:list =  archivo.readline#Ej 1 
 
-## Available Scripts
+#a
+def contar_lineas (nombre_archivo : str) -> int:
+    archivo = open(nombre_archivo, 'r')
+    lineas:list =  archivo.readlines()
+    return len(lineas)
 
-In the project directory, you can run:
+#print(contar_lineas('/home/clinux01/Escritorio/prueba.txt'))
 
-### `npm start`
+#b
+def existe_palabra (palabra:str, nombre_archivo:str) -> bool:
+    archivo = open(nombre_archivo, 'r')
+    lineas:list =  archivo.readlines()
+    for posicion in lineas:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        if(palabra in posicion):
+            return True
+        
+    return False     
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#print(existe_palabra("hola",'/home/clinux01/Escritorio/prueba.txt'))
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#c 
+def cantidadApariciones (palabra:str, nombre_archivo:str) -> int:
+    archivo = open(nombre_archivo, 'r')
+    lineas:list =  archivo.readlines()
+    contador:int = 0 
+    for posicion in lineas:
+        for i in posicion:
+            if(palabra in i):
+                contador += 1
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    return contador 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#print(cantidadApariciones("1",'/home/clinux01/Escritorio/prueba.txt'))        
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#Ejercicio 2 
+def clonarSinComentar (nombre_archivo:str) -> str: 
+    archivo = open(nombre_archivo,'r')
+    lineas:list =  archivo.readlines()
+    archivoSinComent = open('/home/clinux01/Escritorio/clonadoSinComentario.py','w')
+    for posicion in lineas:
+        if posicion.strip()[0] == '#':
+            lineas.remove(posicion)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    archivoSinComent.writelines(lineas)
+    return archivoSinComent
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#print(clonarSinComentar("/home/clinux01/Escritorio/prueba.py"))
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#Ejercicio 3
+def ordenReverso (nombre_archivo:str) -> str:
+    archivo = open(nombre_archivo,'r')
+    lineas:list =  archivo.readlines()
+    reverso = open('/home/clinux01/Escritorio/reverso.txt','w')
+    while len(lineas) > 0:
+        linea = lineas[len(lineas)-1]
+        reverso.writelines(linea)
+        lineas.remove(linea)
+    return reverso
+#print(ordenReverso("/home/clinux01/Escritorio/prueba.py"))
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#Ejercicio 4
+def agregoFraseFinal (documento:str, frase: str) -> str:
+    archivo = open(documento,'a')
+    archivo.write(frase)
+    return documento
+#print(agregoFraseFinal ("/home/clinux01/Escritorio/prueba.py", "bien"))
 
-## Learn More
+#Ejercicio 5
+def agregoFraseComienzo (documento:str, frase: str) -> str:
+    archivo = open(documento,'r')
+    lineas:list =  archivo.readlines()
+    archivo.close()
+    archivo = open (documento,'w')
+    lineas.insert(0,frase)
+    archivo.writelines(lineas)
+    return documento
+#print(agregoFraseComienzo ("/home/clinux01/Escritorio/prueba.py", "Jose \n"))
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#Ejercicio 6
+def noBinarios (documento:str)-> [str]:
+    archivo = open(documento,'rb')
+    lista:[str]= []
+    lineas:list =  archivo.readlines()
+    for linea in lineas:
+        if len(linea)>=5:
+          for i in linea:
+            lista.append(chr(i))
+    return lista
 
-### Code Splitting
+print(noBinarios ("/home/clinux01/Escritorio/prueba.py"))s()
+    return len(lineas)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#print(contar_lineas('/home/clinux01/Escritorio/prueba.txt'))
 
-### Analyzing the Bundle Size
+#b
+def existe_palabra (palabra:str#Ej 1 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#a
+def contar_lineas (nombre_archivo : str) -> int:
+    archivo = open(nombre_archivo, 'r')
+    lineas:list =  archivo.readlines()
+    return len(lineas)
 
-### Making a Progressive Web App
+#print(contar_lineas('/home/clinux01/Escritorio/prueba.txt'))
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#b
+def existe_palabra (palabra:str, nombre_archivo:str) -> bool:
+    archivo = open(nombre_archivo, 'r')
+    lineas:list =  archivo.readlines()
+    for posicion in lineas:
 
-### Advanced Configuration
+        if(palabra in posicion):
+            return True
+        
+    return False     
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#print(existe_palabra("hola",'/home/clinux01/Escritorio/prueba.txt'))
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+#c 
+def cantidadApariciones (palabra:str, nombre_archivo:str) -> int:
+    archivo = open(nombre_archivo, 'r')
+    lineas:list =  archivo.readlines()
+    contador:int = 0 
+    for posicion in lineas:
+        for i in posicion:
+            if(palabra in i):
+                contador += 1
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    return contador 
+
+#print(cantidadApariciones("1",'/home/clinux01/Escritorio/prueba.txt'))        
+
+
+#Ejercicio 2 
+def clonarSinComentar (nombre_archivo:str) -> str: 
+    archivo = open(nombre_archivo,'r')
+    lineas:list =  archivo.readlines()
+    archivoSinComent = open('/home/clinux01/Escritorio/clonadoSinComentario.py','w')
+    for posicion in lineas:
+        if posicion.strip()[0] == '#':
+            lineas.remove(posicion)
+
+    archivoSinComent.writelines(lineas)
+    return archivoSinComent
+
+#print(clonarSinComentar("/home/clinux01/Escritorio/prueba.py"))
+
+#Ejercicio 3
+def ordenReverso (nombre_archivo:str) -> str:
+    archivo = open(nombre_archivo,'r')
+    lineas:list =  archivo.readlines()
+    reverso = open('/home/clinux01/Escritorio/reverso.txt','w')
+    while len(lineas) > 0:
+        linea = lineas[len(lineas)-1]
+        reverso.writelines(linea)
+        lineas.remove(linea)
+    return reverso
+#print(ordenReverso("/home/clinux01/Escritorio/prueba.py"))
+
+#Ejercicio 4
+def agregoFraseFinal (documento:str, frase: str) -> str:
+    archivo = open(documento,'a')
+    archivo.write(frase)
+    return documento
+#print(agregoFraseFinal ("/home/clinux01/Escritorio/prueba.py", "bien"))
+
+#Ejercicio 5
+def agregoFraseComienzo (documento:str, frase: str) -> str:
+    archivo = open(documento,'r')
+    lineas:list =  archivo.readlines()
+    archivo.close()
+    archivo = open (documento,'w')
+    lineas.insert(0,frase)
+    archivo.writelines(lineas)
+    return documento
+#print(agregoFraseComienzo ("/home/clinux01/Escritorio/prueba.py", "Jose \n"))
+
+
+#Ejercicio 6
+def noBinarios (documento:str)-> [str]:
+    archivo = open(documento,'rb')
+    lista:[str]= []
+    lineas:list =  archivo.readlines()
+    for linea in lineas:
+        if len(linea)>=5:
+          for i in linea:
+            lista.append(chr(i))
+    return lista
+
+print(noBinarios ("/home/clinux01/Escritorio/prueba.py")), nombre_archivo:str) -> bool:
+    archivo = open(nombre_archivo, 'r')
+    lineas:list =  archivo.readlines()
+    for posicion in lineas:
+
+        if(palabra in posicion):
+            return True
+        
+    return False     
+
+#print(existe_palabra("hola",'/home/clinux01/Escritorio/prueba.txt'))
+
+
+
+#c 
+def cantidadApariciones (palabra:str, nombre_archivo:str) -> int:
+    archivo = open(nombre_archivo, 'r')
+    lineas:list =  archivo.readlines()
+    contador:int = 0 
+    for posicion in lineas:
+        for i in posicion:
+            if(palabra in i):
+                contador += 1
+
+    return contador 
+
+#print(cantidadApariciones("1",'/home/clinux01/Escritorio/prueba.txt'))        
+
+
+#Ejercicio 2 
+def clonarSinComentar (nombre_archivo:str) -> str: 
+    archivo = open(nombre_archivo,'r')
+    lineas:list =  archivo.readlines()
+    archivoSinComent = open('/home/clinux01/Escritorio/clonadoSinComentario.py','w')
+    for posicion in lineas:
+        if posicion.strip()[0] == '#':
+            lineas.remove(posicion)
+
+    archivoSinComent.writelines(lineas)
+    return archivoSinComent
+
+#print(clonarSinComentar("/home/clinux01/Escritorio/prueba.py"))
+
+#Ejercicio 3
+def ordenReverso (nombre_archivo:str) -> str:
+    archivo = open(nombre_archivo,'r')
+    lineas:list =  archivo.readlines()
+    reverso = open('/home/clinux01/Escritorio/reverso.txt','w')
+    while len(lineas) > 0:
+        linea = lineas[len(lineas)-1]
+        reverso.writelines(linea)
+        lineas.remove(linea)
+    return reverso
+#print(ordenReverso("/home/clinux01/Escritorio/prueba.py"))
+
+#Ejercicio 4
+def agregoFraseFinal (documento:str, frase: str) -> str:
+    archivo = open(documento,'a')
+    archivo.write(frase)
+    return documento
+#print(agregoFraseFinal ("/home/clinux01/Escritorio/prueba.py", "bien"))
+
+#Ejercicio 5
+def agregoFraseComienzo (documento:str, frase: str) -> str:
+    archivo = open(documento,'r')
+    lineas:list =  archivo.readlines()
+    archivo.close()
+    archivo = open (documento,'w')
+    lineas.insert(0,frase)
+    archivo.writelines(lineas)
+    return documento
+#print(agregoFraseComienzo ("/home/clinux01/Escritorio/prueba.py", "Jose \n"))
+
+
+#Ejercicio 6
+def noBinarios (documento:str)-> [str]:
+    archivo = open(documento,'rb')
+    lista:[str]= []
+    lineas:list =  archivo.readlines()
+    for linea in lineas:
+        if len(linea)>=5:
+          for i in linea:
+            lista.append(chr(i))
+    return lista
+
+print(noBinarios ("/home/clinux01/Escritorio/prueba.py"))
